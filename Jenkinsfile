@@ -18,9 +18,9 @@ pipeline {
                 branch 'master'
             }
             steps {
-                // script {
+                script {
                     app = docker.build("hisbu/gradle-test")
-                // }
+                }
             }
         }
         stage('Push Docker Image') {
